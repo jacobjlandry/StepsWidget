@@ -12,6 +12,6 @@ import SwiftUI
 struct Steps_QuickViewBundle: WidgetBundle {
     var body: some Widget {
         Steps_QuickView()
-        Steps_QuickViewLiveActivity()
+        //Steps_QuickViewLiveActivity()
     }
 }

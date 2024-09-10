@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+struct HealthRecord: Identifiable {
+    let id = UUID()
+    var count: Int
+    let date: Date
+    let unit: String
+}

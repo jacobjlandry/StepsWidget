@@ -8,11 +8,29 @@
 import SwiftUI
 
 struct WidgetTotalView: View {
+    let title: String
+    let goal: Goal
+    let total: HealthRecord
+    let color: Color
+    let icon: String
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text("\(total.count) \(total.unit)")
+                .font(.title)
+                .foregroundStyle(color)
+        }.frame(maxWidth: .infinity, maxHeight: 150)
+        .clipShape(RoundedRectangle(cornerRadius: 16.0, style: .continuous))
+        .overlay(alignment: .topLeading) {
+            HStack {
+                Image(systemName: "\(icon)")
+                    .foregroundStyle(color)
+                Text("\(title)").foregroundStyle(color)
+            }.padding()
+        }
     }
 }
 
 #Preview {
-    WidgetTotalView()
+    WidgetTotalView(title: "Steps", goal: Goal(count: 0, reward: "", goalTimeframe: "weekly", unit: "step", success: "above"), total: HealthRecord(count: 0, date: Date(), unit: ""), color: .orange, icon: "shoe.2")
 }

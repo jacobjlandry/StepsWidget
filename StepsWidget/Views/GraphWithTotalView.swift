@@ -8,11 +8,26 @@
 import SwiftUI
 
 struct GraphWithTotalView: View {
+    
+    let title: String
+    let goal: Goal
+    let total: HealthRecord
+    let color: Color
+    let icon: String
+    let records: [HealthRecord]
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        TotalView(
+            title: title,
+            goal: goal,
+            total: total,
+            color: color,
+            icon: icon
+        )
+        LineGraphView(records: records)
     }
 }
 
 #Preview {
-    GraphWithTotalView()
+    GraphWithTotalView(title: "test", goal: Goal(count: 0, reward: "test", goalTimeframe: "1", unit: "test", success: "test"), total: HealthRecord(count: 0, date: Date(), unit: "test"), color: .orange, icon: "shoes.2", records: [])
 }

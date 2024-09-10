@@ -7,8 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		295B65702C8B7B3E00EA4FE5 /* TotalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295B656F2C8B7B3E00EA4FE5 /* TotalView.swift */; };
+		295B65722C8B7B7600EA4FE5 /* Goal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295B65712C8B7B7600EA4FE5 /* Goal.swift */; };
+		295B65742C8B7C0400EA4FE5 /* HealthRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295B65732C8B7C0400EA4FE5 /* HealthRecord.swift */; };
+		295B65762C8B7DF500EA4FE5 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295B65752C8B7DF500EA4FE5 /* ListView.swift */; };
+		295B65782C8B980000EA4FE5 /* LineGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295B65772C8B980000EA4FE5 /* LineGraphView.swift */; };
+		295B657A2C8F3AFE00EA4FE5 /* ListWithTotalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295B65792C8F3AFD00EA4FE5 /* ListWithTotalView.swift */; };
+		295B657C2C8F5E3800EA4FE5 /* GraphWithTotalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295B657B2C8F5E3800EA4FE5 /* GraphWithTotalView.swift */; };
+		295B659F2C8F995F00EA4FE5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EA4C472C70447C0098EC4E /* ContentView.swift */; };
+		295B65B32C8FA7A800EA4FE5 /* Steps_QuickViewBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295B65B22C8FA7A800EA4FE5 /* Steps_QuickViewBundle.swift */; };
+		295B65B52C8FA7A800EA4FE5 /* Steps_QuickViewLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295B65B42C8FA7A800EA4FE5 /* Steps_QuickViewLiveActivity.swift */; };
+		295B65B72C8FA7A800EA4FE5 /* Steps_QuickView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295B65B62C8FA7A800EA4FE5 /* Steps_QuickView.swift */; };
+		295B65B92C8FA7A900EA4FE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 295B65B82C8FA7A900EA4FE5 /* Assets.xcassets */; };
+		295B65BD2C8FA7A900EA4FE5 /* Steps QuickViewExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 295B65AE2C8FA7A800EA4FE5 /* Steps QuickViewExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		295B65C12C8FA7BF00EA4FE5 /* Steps_QuickView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295B65B62C8FA7A800EA4FE5 /* Steps_QuickView.swift */; };
+		295B65C52C908F1800EA4FE5 /* Goal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295B65712C8B7B7600EA4FE5 /* Goal.swift */; };
+		295B65C62C908F3E00EA4FE5 /* HealthStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298D22462C704FCE00021C0A /* HealthStore.swift */; };
+		295B65C72C908F4F00EA4FE5 /* HealthRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295B65732C8B7C0400EA4FE5 /* HealthRecord.swift */; };
+		295B65C82C90922600EA4FE5 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 295B65832C8F758600EA4FE5 /* WidgetKit.framework */; };
+		295B65CB2C90922800EA4FE5 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 295B65852C8F758600EA4FE5 /* SwiftUI.framework */; };
+		295B65CE2C9099FB00EA4FE5 /* WidgetTotalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295B65CD2C9099FB00EA4FE5 /* WidgetTotalView.swift */; };
+		295B65CF2C9099FD00EA4FE5 /* WidgetTotalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295B65CD2C9099FB00EA4FE5 /* WidgetTotalView.swift */; };
+		298D22472C704FCE00021C0A /* HealthStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298D22462C704FCE00021C0A /* HealthStore.swift */; };
+		29B87E852C7D071800A924BF /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B87E842C7D071800A924BF /* Helper.swift */; };
 		29EA4C462C70447C0098EC4E /* StepsWidgetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EA4C452C70447C0098EC4E /* StepsWidgetApp.swift */; };
-		29EA4C482C70447C0098EC4E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EA4C472C70447C0098EC4E /* ContentView.swift */; };
 		29EA4C4A2C70447D0098EC4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29EA4C492C70447D0098EC4E /* Assets.xcassets */; };
 		29EA4C4D2C70447D0098EC4E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29EA4C4C2C70447D0098EC4E /* Preview Assets.xcassets */; };
 		29EA4C572C70447D0098EC4E /* StepsWidgetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EA4C562C70447D0098EC4E /* StepsWidgetTests.swift */; };
@@ -17,6 +39,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		295B65BB2C8FA7A900EA4FE5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29EA4C3A2C70447C0098EC4E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 295B65AD2C8FA7A800EA4FE5;
+			remoteInfo = "Steps QuickViewExtension";
+		};
 		29EA4C532C70447D0098EC4E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 29EA4C3A2C70447C0098EC4E /* Project object */;
@@ -33,7 +62,40 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		295B65992C8F758800EA4FE5 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				295B65BD2C8FA7A900EA4FE5 /* Steps QuickViewExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		295B656F2C8B7B3E00EA4FE5 /* TotalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalView.swift; sourceTree = "<group>"; };
+		295B65712C8B7B7600EA4FE5 /* Goal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goal.swift; sourceTree = "<group>"; };
+		295B65732C8B7C0400EA4FE5 /* HealthRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthRecord.swift; sourceTree = "<group>"; };
+		295B65752C8B7DF500EA4FE5 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		295B65772C8B980000EA4FE5 /* LineGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineGraphView.swift; sourceTree = "<group>"; };
+		295B65792C8F3AFD00EA4FE5 /* ListWithTotalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListWithTotalView.swift; sourceTree = "<group>"; };
+		295B657B2C8F5E3800EA4FE5 /* GraphWithTotalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphWithTotalView.swift; sourceTree = "<group>"; };
+		295B65832C8F758600EA4FE5 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		295B65852C8F758600EA4FE5 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		295B65AE2C8FA7A800EA4FE5 /* Steps QuickViewExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Steps QuickViewExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		295B65B22C8FA7A800EA4FE5 /* Steps_QuickViewBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Steps_QuickViewBundle.swift; sourceTree = "<group>"; };
+		295B65B42C8FA7A800EA4FE5 /* Steps_QuickViewLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Steps_QuickViewLiveActivity.swift; sourceTree = "<group>"; };
+		295B65B62C8FA7A800EA4FE5 /* Steps_QuickView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Steps_QuickView.swift; sourceTree = "<group>"; };
+		295B65B82C8FA7A900EA4FE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		295B65BA2C8FA7A900EA4FE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		295B65CD2C9099FB00EA4FE5 /* WidgetTotalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetTotalView.swift; sourceTree = "<group>"; };
+		298D22442C704BC900021C0A /* StepsWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StepsWidget.entitlements; sourceTree = "<group>"; };
+		298D22462C704FCE00021C0A /* HealthStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthStore.swift; sourceTree = "<group>"; };
+		29B87E842C7D071800A924BF /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		29EA4C422C70447C0098EC4E /* StepsWidget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StepsWidget.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29EA4C452C70447C0098EC4E /* StepsWidgetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsWidgetApp.swift; sourceTree = "<group>"; };
 		29EA4C472C70447C0098EC4E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -47,6 +109,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		295B65AB2C8FA7A800EA4FE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				295B65CB2C90922800EA4FE5 /* SwiftUI.framework in Frameworks */,
+				295B65C82C90922600EA4FE5 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		29EA4C3F2C70447C0098EC4E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -71,12 +142,73 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		295B65822C8F758600EA4FE5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				295B65832C8F758600EA4FE5 /* WidgetKit.framework */,
+				295B65852C8F758600EA4FE5 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		295B65B12C8FA7A800EA4FE5 /* Steps QuickView */ = {
+			isa = PBXGroup;
+			children = (
+				295B65B22C8FA7A800EA4FE5 /* Steps_QuickViewBundle.swift */,
+				295B65B42C8FA7A800EA4FE5 /* Steps_QuickViewLiveActivity.swift */,
+				295B65B62C8FA7A800EA4FE5 /* Steps_QuickView.swift */,
+				295B65B82C8FA7A900EA4FE5 /* Assets.xcassets */,
+				295B65BA2C8FA7A900EA4FE5 /* Info.plist */,
+			);
+			path = "Steps QuickView";
+			sourceTree = "<group>";
+		};
+		298D22452C704FBB00021C0A /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				298D22462C704FCE00021C0A /* HealthStore.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		298D22482C70501A00021C0A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				295B65712C8B7B7600EA4FE5 /* Goal.swift */,
+				295B65732C8B7C0400EA4FE5 /* HealthRecord.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		29B87E7C2C7D06A500A924BF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				295B656F2C8B7B3E00EA4FE5 /* TotalView.swift */,
+				295B65752C8B7DF500EA4FE5 /* ListView.swift */,
+				295B65772C8B980000EA4FE5 /* LineGraphView.swift */,
+				295B65792C8F3AFD00EA4FE5 /* ListWithTotalView.swift */,
+				295B657B2C8F5E3800EA4FE5 /* GraphWithTotalView.swift */,
+				295B65CD2C9099FB00EA4FE5 /* WidgetTotalView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		29B87E832C7D070F00A924BF /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				29B87E842C7D071800A924BF /* Helper.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		29EA4C392C70447C0098EC4E = {
 			isa = PBXGroup;
 			children = (
 				29EA4C442C70447C0098EC4E /* StepsWidget */,
 				29EA4C552C70447D0098EC4E /* StepsWidgetTests */,
 				29EA4C5F2C70447D0098EC4E /* StepsWidgetUITests */,
+				295B65B12C8FA7A800EA4FE5 /* Steps QuickView */,
+				295B65822C8F758600EA4FE5 /* Frameworks */,
 				29EA4C432C70447C0098EC4E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,6 +219,7 @@
 				29EA4C422C70447C0098EC4E /* StepsWidget.app */,
 				29EA4C522C70447D0098EC4E /* StepsWidgetTests.xctest */,
 				29EA4C5C2C70447D0098EC4E /* StepsWidgetUITests.xctest */,
+				295B65AE2C8FA7A800EA4FE5 /* Steps QuickViewExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,6 +227,11 @@
 		29EA4C442C70447C0098EC4E /* StepsWidget */ = {
 			isa = PBXGroup;
 			children = (
+				29B87E832C7D070F00A924BF /* Utilities */,
+				29B87E7C2C7D06A500A924BF /* Views */,
+				298D22482C70501A00021C0A /* Models */,
+				298D22452C704FBB00021C0A /* Store */,
+				298D22442C704BC900021C0A /* StepsWidget.entitlements */,
 				29EA4C452C70447C0098EC4E /* StepsWidgetApp.swift */,
 				29EA4C472C70447C0098EC4E /* ContentView.swift */,
 				29EA4C492C70447D0098EC4E /* Assets.xcassets */,
@@ -130,6 +268,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		295B65AD2C8FA7A800EA4FE5 /* Steps QuickViewExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 295B65BE2C8FA7A900EA4FE5 /* Build configuration list for PBXNativeTarget "Steps QuickViewExtension" */;
+			buildPhases = (
+				295B65AA2C8FA7A800EA4FE5 /* Sources */,
+				295B65AB2C8FA7A800EA4FE5 /* Frameworks */,
+				295B65AC2C8FA7A800EA4FE5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Steps QuickViewExtension";
+			productName = "Steps QuickViewExtension";
+			productReference = 295B65AE2C8FA7A800EA4FE5 /* Steps QuickViewExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		29EA4C412C70447C0098EC4E /* StepsWidget */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 29EA4C662C70447D0098EC4E /* Build configuration list for PBXNativeTarget "StepsWidget" */;
@@ -137,10 +292,12 @@
 				29EA4C3E2C70447C0098EC4E /* Sources */,
 				29EA4C3F2C70447C0098EC4E /* Frameworks */,
 				29EA4C402C70447C0098EC4E /* Resources */,
+				295B65992C8F758800EA4FE5 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				295B65BC2C8FA7A900EA4FE5 /* PBXTargetDependency */,
 			);
 			name = StepsWidget;
 			productName = StepsWidget;
@@ -193,6 +350,9 @@
 				LastSwiftUpdateCheck = 1540;
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
+					295B65AD2C8FA7A800EA4FE5 = {
+						CreatedOnToolsVersion = 15.4;
+					};
 					29EA4C412C70447C0098EC4E = {
 						CreatedOnToolsVersion = 15.4;
 					};
@@ -222,11 +382,20 @@
 				29EA4C412C70447C0098EC4E /* StepsWidget */,
 				29EA4C512C70447D0098EC4E /* StepsWidgetTests */,
 				29EA4C5B2C70447D0098EC4E /* StepsWidgetUITests */,
+				295B65AD2C8FA7A800EA4FE5 /* Steps QuickViewExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		295B65AC2C8FA7A800EA4FE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				295B65B92C8FA7A900EA4FE5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		29EA4C402C70447C0098EC4E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -253,12 +422,37 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		295B65AA2C8FA7A800EA4FE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				295B65C52C908F1800EA4FE5 /* Goal.swift in Sources */,
+				295B65C62C908F3E00EA4FE5 /* HealthStore.swift in Sources */,
+				295B65C72C908F4F00EA4FE5 /* HealthRecord.swift in Sources */,
+				295B65B32C8FA7A800EA4FE5 /* Steps_QuickViewBundle.swift in Sources */,
+				295B65B52C8FA7A800EA4FE5 /* Steps_QuickViewLiveActivity.swift in Sources */,
+				295B65CF2C9099FD00EA4FE5 /* WidgetTotalView.swift in Sources */,
+				295B65B72C8FA7A800EA4FE5 /* Steps_QuickView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		29EA4C3E2C70447C0098EC4E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29EA4C482C70447C0098EC4E /* ContentView.swift in Sources */,
+				295B65CE2C9099FB00EA4FE5 /* WidgetTotalView.swift in Sources */,
+				295B65722C8B7B7600EA4FE5 /* Goal.swift in Sources */,
+				295B659F2C8F995F00EA4FE5 /* ContentView.swift in Sources */,
+				295B65C12C8FA7BF00EA4FE5 /* Steps_QuickView.swift in Sources */,
+				298D22472C704FCE00021C0A /* HealthStore.swift in Sources */,
 				29EA4C462C70447C0098EC4E /* StepsWidgetApp.swift in Sources */,
+				295B657C2C8F5E3800EA4FE5 /* GraphWithTotalView.swift in Sources */,
+				295B65702C8B7B3E00EA4FE5 /* TotalView.swift in Sources */,
+				295B65782C8B980000EA4FE5 /* LineGraphView.swift in Sources */,
+				295B65762C8B7DF500EA4FE5 /* ListView.swift in Sources */,
+				29B87E852C7D071800A924BF /* Helper.swift in Sources */,
+				295B65742C8B7C0400EA4FE5 /* HealthRecord.swift in Sources */,
+				295B657A2C8F3AFE00EA4FE5 /* ListWithTotalView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +476,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		295B65BC2C8FA7A900EA4FE5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 295B65AD2C8FA7A800EA4FE5 /* Steps QuickViewExtension */;
+			targetProxy = 295B65BB2C8FA7A900EA4FE5 /* PBXContainerItemProxy */;
+		};
 		29EA4C542C70447D0098EC4E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 29EA4C412C70447C0098EC4E /* StepsWidget */;
@@ -295,6 +494,60 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		295B65BF2C8FA7A900EA4FE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 92VW8CGDV9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Steps QuickView/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Steps QuickView";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jacoblandry.stepswidget.Steps-QuickView";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		295B65C02C8FA7A900EA4FE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 92VW8CGDV9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Steps QuickView/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Steps QuickView";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jacoblandry.stepswidget.Steps-QuickView";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		29EA4C642C70447D0098EC4E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -417,13 +670,19 @@
 		29EA4C672C70447D0098EC4E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = StepsWidget/StepsWidget.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"StepsWidget/Preview Content\"";
+				DEVELOPMENT_TEAM = 92VW8CGDV9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Healthy Day";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "This app requires permission to work correctly.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "This app requires permission to work correctly.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -434,7 +693,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = halexmorph.StepsWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jacoblandry.stepswidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -445,13 +704,19 @@
 		29EA4C682C70447D0098EC4E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = StepsWidget/StepsWidget.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"StepsWidget/Preview Content\"";
+				DEVELOPMENT_TEAM = 92VW8CGDV9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Healthy Day";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "This app requires permission to work correctly.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "This app requires permission to work correctly.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -462,7 +727,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = halexmorph.StepsWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jacoblandry.stepswidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -545,6 +810,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		295B65BE2C8FA7A900EA4FE5 /* Build configuration list for PBXNativeTarget "Steps QuickViewExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				295B65BF2C8FA7A900EA4FE5 /* Debug */,
+				295B65C02C8FA7A900EA4FE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		29EA4C3D2C70447C0098EC4E /* Build configuration list for PBXProject "StepsWidget" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
