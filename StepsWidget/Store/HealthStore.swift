@@ -38,10 +38,6 @@ class HealthStore {
     }
     
     func calculateSteps() async throws {
-        // reset steps so we don't keep appending
-        self.steps = [];
-        self.totalSteps = HealthRecord(count: 0, date: Date(), unit: "step")
-        
         guard let healthStore = self.healthStore else { return }
         
         var stepDays:[Date] = []
@@ -65,6 +61,9 @@ class HealthStore {
         }
         let now = Date();
         
+        // reset steps so we don't keep appending
+        self.steps = [];
+        self.totalSteps = HealthRecord(count: 0, date: Date(), unit: "step")
         let everyDay = DateComponents(day:1)
         var index:Int = 0
         for day in stepDays {
@@ -103,8 +102,10 @@ class HealthStore {
                     let count = statistics.sumQuantity()?.doubleValue(for: .count())
                     let step = HealthRecord(count: Int(count ?? 0), date: statistics.startDate, unit: "")
                     if(step.count > 0) {
-                        self.totalSteps.count += step.count
                         self.steps.append(step)
+                        self.totalSteps.count = self.steps.map({$0.count}).reduce(0, +)
+                        print("Appending \(step.count)")
+                        print("New Total \(self.totalSteps.count)")
                     }
                 }
             }
@@ -322,6 +323,48 @@ class HealthStore {
         }
         
         healthStore.execute(weightQuery)
+    }
+    
+    func logWater(ounces : Double) {
+        let quantityType = HKQuantityType.quantityType(forIdentifier: .dietaryWater)
+      
+        // string value represents US fluid
+        let quanitytUnit = HKUnit(from: "fl_oz_us")
+        let quantityAmount = HKQuantity(unit: quanitytUnit, doubleValue: ounces)
+        let now = Date()
+        
+        let sample = HKQuantitySample(type: quantityType!, quantity: quantityAmount, start: now, end: now)
+        let correlationType = HKObjectType.correlationType(forIdentifier: HKCorrelationTypeIdentifier.food)
+          
+        let waterCorrelationForWaterAmount = HKCorrelation(type: correlationType!, start: now, end: now, objects: [sample])
+          
+        // Send water intake data to healthStore…aka ‘Health’ app
+        self.healthStore?.save(waterCorrelationForWaterAmount, withCompletion: { (success, error) in
+            if (error != nil) {
+                NSLog("error occurred saving water data")
+            }
+        })
+    }
+    
+    func logCaffeine(milligrams : Double) {
+        let quantityType = HKQuantityType.quantityType(forIdentifier: .dietaryCaffeine)
+      
+        // string value represents US fluid
+        let quanitytUnit = HKUnit(from: "mg")
+        let quantityAmount = HKQuantity(unit: quanitytUnit, doubleValue: milligrams)
+        let now = Date()
+        
+        let sample = HKQuantitySample(type: quantityType!, quantity: quantityAmount, start: now, end: now)
+        let correlationType = HKObjectType.correlationType(forIdentifier: HKCorrelationTypeIdentifier.food)
+          
+        let caffeineCorrelationForCaffeineAmount = HKCorrelation(type: correlationType!, start: now, end: now, objects: [sample])
+          
+        // Send water intake data to healthStore…aka ‘Health’ app
+        self.healthStore?.save(caffeineCorrelationForCaffeineAmount, withCompletion: { (success, error) in
+            if (error != nil) {
+                NSLog("error occurred saving caffeine data")
+            }
+        })
     }
     
     func requestAuthorization() async {

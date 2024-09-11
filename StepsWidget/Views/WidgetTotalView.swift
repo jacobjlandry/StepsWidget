@@ -16,7 +16,7 @@ struct WidgetTotalView: View {
     
     var body: some View {
         VStack {
-            Text("\(total.count) \(total.unit)")
+            Text("\(total.count)")
                 .font(.title)
                 .foregroundStyle(color)
         }.frame(maxWidth: .infinity, maxHeight: 150)
@@ -27,10 +27,16 @@ struct WidgetTotalView: View {
                     .foregroundStyle(color)
                 Text("\(title)").foregroundStyle(color)
             }.padding()
+        }.overlay(alignment: .bottom) {
+            HStack {
+                Image(systemName: "trophy")
+                    .foregroundStyle(color)
+                Text(goal.widgetStatusMessage(count: total.count)).foregroundStyle(color)
+            }
         }
     }
 }
 
 #Preview {
-    WidgetTotalView(title: "Steps", goal: Goal(count: 0, reward: "", goalTimeframe: "weekly", unit: "step", success: "above"), total: HealthRecord(count: 0, date: Date(), unit: ""), color: .orange, icon: "shoe.2")
+    WidgetTotalView(title: "Steps", goal: Goal(count: getStepsGoal(), reward: "", goalTimeframe: "weekly", unit: "step", success: "above"), total: HealthRecord(count: 8537, date: Date(), unit: ""), color: .orange, icon: "shoe.2")
 }

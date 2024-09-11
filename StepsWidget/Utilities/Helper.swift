@@ -11,3 +11,7 @@ func isUnderAverage(_ goal: Int, _ count: Int, _ timeframe: Int) -> Bool {
     let average = goal / timeframe
     return count < average
 }
+
+func getStepsGoal() -> Int {
+    return 60000
+}

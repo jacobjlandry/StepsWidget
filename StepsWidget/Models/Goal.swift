@@ -17,20 +17,33 @@ struct Goal: Identifiable {
     
     func statusMessage(count: Int) -> String {
         var statusMessage:String = "";
+        
+        let numberFormatter = NumberFormatter()
+        numberFormatter.numberStyle = .decimal
+        let formattedCount = numberFormatter.string(from: NSNumber(value:self.count)) ?? ""
+        
         if(self.success == "above") {
             if(self.count > count) {
-                statusMessage = "You haven't met your \(goalTimeframe) goal of \(self.count) \(self.unit)s yet, keep going!"
+                statusMessage = "You haven't met your \(goalTimeframe) goal of \(formattedCount) \(self.unit)s yet, keep going!"
             } else {
                 statusMessage = "Congratulations! You've met your \(self.goalTimeframe) \(self.unit) goal! \(self.reward)"
             }
         } else {
             if(self.count > count) {
-                statusMessage = "You're still below your \(goalTimeframe) limit of \(self.count) \(self.unit)s, great job!"
+                statusMessage = "You're still below your \(goalTimeframe) limit of \(formattedCount) \(self.unit)s, great job!"
             } else {
                 statusMessage = "You've exceeded your \(self.goalTimeframe) \(self.unit) limit! \(self.reward)"
             }
         }
         
         return statusMessage
+    }
+    
+    func widgetStatusMessage(count: Int) -> String {
+        let numberFormatter = NumberFormatter()
+        numberFormatter.numberStyle = .decimal
+        let formattedCount = numberFormatter.string(from: NSNumber(value:self.count)) ?? ""
+        
+        return "\(formattedCount)";
     }
 }

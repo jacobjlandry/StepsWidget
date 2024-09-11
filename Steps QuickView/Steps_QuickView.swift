@@ -23,7 +23,7 @@ struct Provider: TimelineProvider {
         var entries: [StepsQuickView] = []
         let stepCount = self.healthStore.totalSteps.count;
         if(stepCount > 0) {
-            let stepGoal = Goal(count: 35000, reward: "Have a Beer!", goalTimeframe: "weekly", unit: "step", success: "above")
+            let stepGoal = Goal(count: getStepsGoal(), reward: "Have a Beer!", goalTimeframe: "weekly", unit: "step", success: "above")
             let stepRecord = HealthRecord(count: stepCount, date: Date(), unit: "steps")
             let entry = StepsQuickView(date: Date(), record: stepRecord, goal: stepGoal)
             print(stepRecord.count)
@@ -39,11 +39,11 @@ struct Provider: TimelineProvider {
     }
     
     func placeholder(in context: Context) -> StepsQuickView {
-        StepsQuickView(date: Date(), record: HealthRecord(count: 8573, date: Date(), unit: "step"), goal: Goal(count: 35000, reward: "Test", goalTimeframe: "weekly", unit: "step", success: "above"))
+        StepsQuickView(date: Date(), record: HealthRecord(count: 8573, date: Date(), unit: "step"), goal: Goal(count: getStepsGoal(), reward: "Test", goalTimeframe: "weekly", unit: "step", success: "above"))
     }
 
     func getSnapshot(in context: Context, completion: @escaping (StepsQuickView) -> ()) {
-        let entry = StepsQuickView(date: Date(), record: HealthRecord(count: 8573, date: Date(), unit: "step"), goal: Goal(count: 35000, reward: "Have a Beer!", goalTimeframe: "weekly", unit: "step", success: "above"))
+        let entry = StepsQuickView(date: Date(), record: HealthRecord(count: 8573, date: Date(), unit: "step"), goal: Goal(count: getStepsGoal(), reward: "Have a Beer!", goalTimeframe: "weekly", unit: "step", success: "above"))
         completion(entry)
     }
 }
@@ -84,5 +84,5 @@ struct Steps_QuickView: Widget {
 #Preview(as: .systemSmall) {
     Steps_QuickView()
 } timeline: {
-    StepsQuickView(date: Date(), record: HealthRecord(count: 8573, date: Date(), unit: ""), goal: Goal(count: 35000, reward: "Test", goalTimeframe: "weekly", unit: "step", success: "above"))
+    StepsQuickView(date: Date(), record: HealthRecord(count: 8573, date: Date(), unit: ""), goal: Goal(count: getStepsGoal(), reward: "Test", goalTimeframe: "weekly", unit: "step", success: "above"))
 }

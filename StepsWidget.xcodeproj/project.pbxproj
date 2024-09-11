@@ -29,6 +29,7 @@
 		295B65CE2C9099FB00EA4FE5 /* WidgetTotalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295B65CD2C9099FB00EA4FE5 /* WidgetTotalView.swift */; };
 		295B65CF2C9099FD00EA4FE5 /* WidgetTotalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295B65CD2C9099FB00EA4FE5 /* WidgetTotalView.swift */; };
 		298D22472C704FCE00021C0A /* HealthStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298D22462C704FCE00021C0A /* HealthStore.swift */; };
+		29A3E6C32C91FC9F003C916C /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B87E842C7D071800A924BF /* Helper.swift */; };
 		29B87E852C7D071800A924BF /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B87E842C7D071800A924BF /* Helper.swift */; };
 		29EA4C462C70447C0098EC4E /* StepsWidgetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EA4C452C70447C0098EC4E /* StepsWidgetApp.swift */; };
 		29EA4C4A2C70447D0098EC4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29EA4C492C70447D0098EC4E /* Assets.xcassets */; };
@@ -433,6 +434,7 @@
 				295B65B52C8FA7A800EA4FE5 /* Steps_QuickViewLiveActivity.swift in Sources */,
 				295B65CF2C9099FD00EA4FE5 /* WidgetTotalView.swift in Sources */,
 				295B65B72C8FA7A800EA4FE5 /* Steps_QuickView.swift in Sources */,
+				29A3E6C32C91FC9F003C916C /* Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

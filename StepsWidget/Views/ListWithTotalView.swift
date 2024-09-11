@@ -18,10 +18,65 @@ struct ListWithTotalView: View {
     let recordGoals: Bool
     let timeframe: Int
     
+    @State var healthStore = HealthStore()
+    
     var body: some View {
         TotalView(title: title, goal: goal, total: total, color: color, icon: icon)
         
         ListView(records: records, goal: goal, recordGoals: recordGoals, timeframe: timeframe)
+        
+        switch(total.unit) {
+        case "oz":
+            HStack(spacing: 60) {
+                Button {
+                    Task {
+                        self.healthStore.logWater(ounces: 8)
+                    }
+                } label: {
+                    Label(
+                        title: { Text("8oz") },
+                        icon: { Image(systemName: "drop") }
+                    ).foregroundColor(.blue).padding()
+                }
+                
+                Button {
+                    Task {
+                        self.healthStore.logWater(ounces: 12)
+                    }
+                } label: {
+                    Label(
+                        title: { Text("12oz") },
+                        icon: { Image(systemName: "drop") }
+                    ).foregroundColor(.blue).padding()
+                }
+            }
+        case "mg":
+            HStack(spacing: 60) {
+                Button {
+                    Task {
+                        self.healthStore.logCaffeine(milligrams: 90)
+                    }
+                } label: {
+                    Label(
+                        title: { Text("8oz") },
+                        icon: { Image(systemName: "cup.and.saucer") }
+                    ).foregroundColor(.red).padding()
+                }
+                
+                Button {
+                    Task {
+                        self.healthStore.logCaffeine(milligrams: 135)
+                    }
+                } label: {
+                    Label(
+                        title: { Text("12oz") },
+                        icon: { Image(systemName: "cup.and.saucer") }
+                    ).foregroundColor(.red).padding()
+                }
+            }
+        default:
+            Text("")
+        }
     }
 }
 
